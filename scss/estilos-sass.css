@@ -86,17 +86,17 @@
 }
 
 .card1 {
-  background-image: url(../../multimedia/card1.jpg);
+  background-image: url("../../multimedia/card1.jpg");
 }
 
 .card2 {
-  background-image: url(../../multimedia/card2.jpg);
+  background-image: url("../../multimedia/card2.jpg");
 }
 
 .card3 {
-  background-image: url(../../multimedia/card3.jpg);
+  background-image: url("../../multimedia/card3.jpg");
 }
 
 .card4 {
-  background-image: url(../../multimedia/card4.jpg);
+  background-image: url("../../multimedia/card4.jpg");
 }
