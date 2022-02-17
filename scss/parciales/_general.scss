@@ -34,7 +34,7 @@
     background: rgb(0,0,0);
     background: linear-gradient(90deg, rgba(0,0,0,1) 38%, rgba(96,96,96,1) 58%);
     @include movil{
-        background: $color4;
+        background: $color3;
     }
 }
 .error404 {
@@ -46,7 +46,16 @@
         display: none;
     }
 }
-
+.footerflex {
+    @include movil {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+    }
+}
 .imgtamaño {
     size: 330 × 400;
 }
