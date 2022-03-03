@@ -31,10 +31,10 @@
     @extend .letra
 }
 .bgeneral {
-    background: rgb(0,0,0);
-    background: linear-gradient(90deg, rgba(0,0,0,1) 38%, rgba(96,96,96,1) 58%);
+   background-image: url(../../multimedia/fondo2.jpg);
     @include movil{
-        background: $color3;
+        background: rgb(0,0,0);
+        background: linear-gradient(90deg, rgba(0,0,0,1) 38%, rgba(96,96,96,1) 58%);
     }
 }
 .error404 {
@@ -90,3 +90,59 @@
         font-size: 15px;
     }
 }
+.pruebacarrousel {
+     object-fit: cover;
+     height: 75vh;
+     width: auto;
+    
+}
+.carrusel2 {
+    object-fit: cover;
+    }
+.carrusel3 {
+    object-fit: cover;
+    height: 75vh;
+    width: 75vh;
+}
+.footerbgd {
+    background: rgb(0,0,0);
+    background: linear-gradient(90deg, rgba(0,0,0,1) 38%, rgba(96,96,96,1) 58%);
+}
+
+.btnturno {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.7rem 2rem;
+    font-weight: 700;
+    font-size: 18px;
+    text-align: center;
+    text-decoration: none;
+    color: $color1;
+    backface-visibility: hidden;
+    border: 0.3rem solid transparent;
+    border-radius: 3rem;
+    @extend .letra
+  }
+  
+  .btntr {
+    border-color: $color1;
+    transition: transform 0.2s cubic-bezier(0.235, 0, 0.05, 0.95);
+  }
+  
+  .btn:hover {
+    transform: perspective(1px) scale3d(1.044, 1.044, 1) translateZ(0) !important;
+  }
+  .cardservicios {
+    width: 50vh;
+    height: 50vh;
+  }
+  .cardservicios1 {
+      width: 54vh;
+      height: 40vh;
+  }
+  .carruselservicios {
+      object-fit: cover;
+      height: 75vh;
+      width: 54vh;
+  }

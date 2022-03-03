@@ -19,7 +19,7 @@
   background-image: url("../multimedia/card4.jpg");
 }
 
-.letra, .bgthretit, .colorletras {
+.letra, .bgthretit, .colorletras, .btnturno {
   font-family: "Rye", cursive;
 }
 
@@ -60,14 +60,14 @@
 }
 
 .bgeneral {
-  background: black;
-  background: -webkit-gradient(linear, left top, right top, color-stop(38%, black), color-stop(58%, #606060));
-  background: linear-gradient(90deg, black 38%, #606060 58%);
+  background-image: url(../../multimedia/fondo2.jpg);
 }
 
 @media screen and (max-width: 480px) {
   .bgeneral {
-    background: #8e443d;
+    background: black;
+    background: -webkit-gradient(linear, left top, right top, color-stop(38%, black), color-stop(58%, #606060));
+    background: linear-gradient(90deg, black 38%, #606060 58%);
   }
 }
 
@@ -167,6 +167,83 @@
             align-items: center;
     font-size: 15px;
   }
+}
+
+.pruebacarrousel {
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 75vh;
+  width: auto;
+}
+
+.carrusel2 {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.carrusel3 {
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 75vh;
+  width: 75vh;
+}
+
+.footerbgd {
+  background: black;
+  background: -webkit-gradient(linear, left top, right top, color-stop(38%, black), color-stop(58%, #606060));
+  background: linear-gradient(90deg, black 38%, #606060 58%);
+}
+
+.btnturno {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 0.7rem 2rem;
+  font-weight: 700;
+  font-size: 18px;
+  text-align: center;
+  text-decoration: none;
+  color: #15120d;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  border: 0.3rem solid transparent;
+  border-radius: 3rem;
+}
+
+.btntr {
+  border-color: #15120d;
+  -webkit-transition: -webkit-transform 0.2s cubic-bezier(0.235, 0, 0.05, 0.95);
+  transition: -webkit-transform 0.2s cubic-bezier(0.235, 0, 0.05, 0.95);
+  transition: transform 0.2s cubic-bezier(0.235, 0, 0.05, 0.95);
+  transition: transform 0.2s cubic-bezier(0.235, 0, 0.05, 0.95), -webkit-transform 0.2s cubic-bezier(0.235, 0, 0.05, 0.95);
+}
+
+.btn:hover {
+  -webkit-transform: perspective(1px) scale3d(1.044, 1.044, 1) translateZ(0) !important;
+          transform: perspective(1px) scale3d(1.044, 1.044, 1) translateZ(0) !important;
+}
+
+.cardservicios {
+  width: 50vh;
+  height: 50vh;
+}
+
+.cardservicios1 {
+  width: 54vh;
+  height: 40vh;
+}
+
+.carruselservicios {
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 75vh;
+  width: 54vh;
 }
 
 * {
