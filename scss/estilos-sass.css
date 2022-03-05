@@ -60,7 +60,7 @@
 }
 
 .bgeneral {
-  background-image: url(../../multimedia/fondo2.jpg);
+  background-image: url "../multimedia/fondo2.jpg";
 }
 
 @media screen and (max-width: 480px) {
@@ -174,11 +174,6 @@
      object-fit: cover;
   height: 75vh;
   width: auto;
-}
-
-.carrusel2 {
-  -o-object-fit: cover;
-     object-fit: cover;
 }
 
 .carrusel3 {
