@@ -19,6 +19,18 @@
   background-image: url("../multimedia/card4.jpg");
 }
 
+.btncard1 {
+  margin-top: 13vh;
+}
+
+.btncard2 {
+  margin-top: 7vh;
+}
+
+.btncard3 {
+  margin-top: 18vh;
+}
+
 .letra, .bgthretit, .colorletras, .btnturno {
   font-family: "Rye", cursive;
 }
@@ -59,16 +71,8 @@
   color: #b8966f;
 }
 
-.bgeneral {
-  background-image: url "../multimedia/fondo2.jpg";
-}
-
-@media screen and (max-width: 480px) {
-  .bgeneral {
-    background: black;
-    background: -webkit-gradient(linear, left top, right top, color-stop(38%, black), color-stop(58%, #606060));
-    background: linear-gradient(90deg, black 38%, #606060 58%);
-  }
+.backgroundtotal {
+  background-image: url("../../multimedia/fondo2.jpg");
 }
 
 .error404 {
