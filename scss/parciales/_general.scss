@@ -1,141 +1,177 @@
 .letra {
-    font-family: $fuente;
+  font-family: $fuente;
 }
 
 .fstit {
-    color: $color5;
-    font-size: 80px;
+  color: $color5;
+  font-size: 80px;
 }
 .fsub {
-    color: $color5;
-    font-size: 50px;
+  color: $color5;
+  font-size: 50px;
 }
 .bgthretit {
-    background: $color3;
-    background:$gradient-left;
-    color: $color1;
-    font-size: 30px;
-    @extend .letra
+  background: $color3;
+  background: $gradient-left;
+  color: $color1;
+  font-size: 30px;
+  @extend .letra;
 }
 .border1 {
-    border: 8px ridge $color5;
+  border: 8px ridge $color5;
 }
 .border2 {
-    box-shadow: 21px 16px 12px 16px rgba(0,0,0,0.91);
+  box-shadow: 21px 16px 12px 16px rgba(0, 0, 0, 0.91);
 }
 .border3 {
-    box-shadow: 17px 23px 12px 2px rgba(0,0,0,0.91);
+  box-shadow: 17px 23px 12px 2px rgba(0, 0, 0, 0.91);
 }
 .colorletras {
-    color: $color2;
-    @extend .letra
+  color: $color2;
+  @extend .letra;
 }
 .backgroundtotal {
-    background: url("../multimedia/fondo2.jpg")
+  background: url("../multimedia/fondo2.jpg");
+  @include movil {
+    background: rgb(0, 0, 0);
+    background: linear-gradient(
+      90deg,
+      rgba(0, 0, 0, 1) 38%,
+      rgba(96, 96, 96, 1) 58%
+    );
+  }
 }
 .error404 {
-    width: 300px;
-    height: 300px;
+  width: 300px;
+  height: 300px;
 }
 .movilfooter {
-    @include movil {
-        display: none;
-    }
+  @include movil {
+    display: none;
+  }
 }
 .footerflex {
-    @include movil {
-        display: flex;
-        flex-direction: column;
-        flex-wrap: nowrap;
-        align-content: center;
-        justify-content: center;
-        align-items: center;
-    }
-}
-.imgtamaño {
-    size: 330 × 400;
-}
-.mapatamaño {
-    height: 400px;
-    width: 100%;
-}
-.calendario {
-    height: 50vh;
-    width: 50vh;
-    @include movil {
-        height: 25vh;
-        width: 25vh;
-    }
-    
-}
-.calendarioflex {
+  @include movil {
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
     align-content: center;
     justify-content: center;
     align-items: center;
-    font-size: 20px;
-    @include movil {
-        display: flex;
-        flex-direction: column;
-        flex-wrap: nowrap;
-        align-content: center;
-        justify-content: center;
-        align-items: center;
-        font-size: 15px;
-    }
+  }
+}
+.mapatamaño {
+  height: 400px;
+  width: 100%;
+}
+.calendario {
+  height: 50vh;
+  width: 50vh;
+  @include movil {
+    height: 35vh;
+    width: 35vh;
+  }
+}
+.calendarioflex {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  @include movil {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+  }
 }
 .pruebacarrousel {
-     object-fit: cover;
-     height: 75vh;
-     width: auto;
-    
+  object-fit: cover;
+  height: 75vh;
+  width: auto;
+  @include movil {
+    height: 36vh;
+    width: 36vh;
+    object-fit: cover;
+  }
 }
 .carrusel3 {
-    object-fit: cover;
-    height: 75vh;
-    width: 75vh;
+  object-fit: cover;
+  height: 75vh;
+  width: 75vh;
+  @include movil {
+    height: 40vh;
+    width: 40vh;
+  }
 }
 .footerbgd {
-    background: rgb(0,0,0);
-    background: linear-gradient(90deg, rgba(0,0,0,1) 38%, rgba(96,96,96,1) 58%);
+  background: rgb(0, 0, 0);
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 1) 38%,
+    rgba(96, 96, 96, 1) 58%
+  );
 }
 
 .btnturno {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    padding: 0.7rem 2rem;
-    font-weight: 700;
-    font-size: 18px;
-    text-align: center;
-    text-decoration: none;
-    color: $color1;
-    backface-visibility: hidden;
-    border: 0.3rem solid transparent;
-    border-radius: 3rem;
-    @extend .letra
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.7rem 2rem;
+  font-weight: 700;
+  font-size: 18px;
+  text-align: center;
+  text-decoration: none;
+  color: $color1;
+  backface-visibility: hidden;
+  border: 0.3rem solid transparent;
+  border-radius: 3rem;
+  @extend .letra;
+}
+
+.btntr {
+  border-color: $color1;
+  transition: transform 0.2s cubic-bezier(0.235, 0, 0.05, 0.95);
+}
+
+.btn:hover {
+  transform: perspective(1px) scale3d(1.044, 1.044, 1) translateZ(0) !important;
+}
+.cardservicios {
+  width: 50vh;
+  height: 50vh;
+}
+.cardservicios1 {
+  width: 54vh;
+  height: 40vh;
+}
+.carruselservicios {
+  object-fit: cover;
+  height: 75vh;
+  width: 54vh;
+}
+.animacion1 {
+  animation-duration: 5s;
+  animation-name: aparecer;
+}
+.animacion2 {
+  animation-duration: 8s;
+  animation-name: aparecer;
+}
+.animacion3 {
+  animation-duration: 10s;
+  animation-name: aparecer;
+}
+@keyframes aparecer {
+  0% {
+    opacity: 0;
   }
-  
-  .btntr {
-    border-color: $color1;
-    transition: transform 0.2s cubic-bezier(0.235, 0, 0.05, 0.95);
+  100% {
+    opacity: 1;
   }
-  
-  .btn:hover {
-    transform: perspective(1px) scale3d(1.044, 1.044, 1) translateZ(0) !important;
-  }
-  .cardservicios {
-    width: 50vh;
-    height: 50vh;
-  }
-  .cardservicios1 {
-      width: 54vh;
-      height: 40vh;
-  }
-  .carruselservicios {
-      object-fit: cover;
-      height: 75vh;
-      width: 54vh;
-  }
+}
